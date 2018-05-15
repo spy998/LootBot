@@ -107,4 +107,43 @@ def mtable(id): #rolls on the magic item tables
         
         out += mtable1[row]
     
+    elif(id == 'B' or id == 'b'):
+        if(d100 <= 15): row = 0
+        elif(d100 > 15 and d100 < 23): row = 1
+        elif(d100 > 22 and d100 < 30): row = 2
+        elif(d100 > 29 and d100 < 35): row = 3
+        elif(d100 > 34 and d100 < 40): row = 4
+        elif(d100 > 39 and d100 < 45): row = 5
+        elif(d100 > 44 and d100 < 50): row = 6
+        elif(d100 > 49 and d100 < 55): row = 7
+        elif(d100 > 54 and d100 < 60): row = 8
+        elif(d100 > 59 and d100 < 65): row = 9
+        elif(d100 > 64 and d100 < 68): row = 10
+        elif(d100 > 67 and d100 < 71): row = 11
+        elif(d100 > 70 and d100 < 74): row = 12
+        elif(d100 > 73 and d100 < 76): row = 13
+        elif(d100 > 75 and d100 < 78): row = 14
+        elif(d100 > 77 and d100 < 80): row = 15
+        elif(d100 > 79 and d100 < 82): row = 16
+        elif(d100 > 81 and d100 < 84): row = 17
+        elif(d100 == 84): row = 18
+        elif(d100 == 85): row = 19
+        elif(d100 == 86): row = 20
+        elif(d100 == 87): row = 21
+        elif(d100 == 88): row = 23
+        elif(d100 == 89): row = 24
+        elif(d100 == 90): row = 25
+        elif(d100 == 91): row = 26
+        elif(d100 == 92): row = 27
+        elif(d100 == 93): row = 28
+        elif(d100 == 94): row = 29
+        elif(d100 == 95): row = 30
+        elif(d100 == 96): row = 31
+        elif(d100 == 97): row = 32
+        elif(d100 == 98): row = 33
+        elif(d100 == 99): row = 34
+        else: row = 35
+        
+        out += mtable2[row]
+    
     return out
