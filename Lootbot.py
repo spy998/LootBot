@@ -95,7 +95,7 @@ def mtable(id): #rolls on the magic item tables
     
     d100 = roller(1, 100, 1)
     
-    if(id == 'A' or id == 'a'):
+    if(id == 1):
         if(d100 <= 50): row = 0
         elif(d100 > 50 and d100 <= 60): row = 1
         elif(d100 > 60 and d100 <= 70): row = 2
@@ -107,7 +107,7 @@ def mtable(id): #rolls on the magic item tables
         
         out += mtable1[row]
     
-    elif(id == 'B' or id == 'b'):
+    elif(id == 2):
         if(d100 <= 15): row = 0
         elif(d100 > 15 and d100 < 23): row = 1
         elif(d100 > 22 and d100 < 30): row = 2
@@ -145,5 +145,128 @@ def mtable(id): #rolls on the magic item tables
         else: row = 35
         
         out += mtable2[row]
+    
+    elif(id == 3):
+        if(d100 < 16): row = 0
+        elif(d100 > 15 and d100 < 23): row = 1
+        elif(d100 > 22 and d100 < 28): row = 2
+        elif(d100 > 27 and d100 < 33): row = 3
+        elif(d100 > 32 and d100 < 38): row = 4
+        elif(d100 > 37 and d100 < 43): row = 5
+        elif(d100 > 42 and d100 < 48): row = 6
+        elif(d100 > 47 and d100 < 53): row = 7
+        elif(d100 > 52 and d100 < 58): row = 8
+        elif(d100 > 57 and d100 < 63): row = 9
+        elif(d100 > 62 and d100 < 68): row = 10
+        elif(d100 > 67 and d100 < 73): row = 11
+        elif(d100 > 72 and d100 < 76): row = 12
+        elif(d100 > 75 and d100 < 79): row = 13
+        elif(d100 > 78 and d100 < 82): row = 14
+        elif(d100 > 81 and d100 < 85): row = 15
+        elif(d100 > 84 and d100 < 88): row = 16
+        elif(d100 > 87 and d100 < 90): row = 17
+        elif(d100 > 89 and d100 < 92): row = 18
+        elif(d100 == 92): row = 19
+        elif(d100 == 93): row = 20
+        elif(d100 == 94): row = 21
+        elif(d100 == 95): row = 22
+        elif(d100 == 96): row = 23
+        elif(d100 == 97): row = 24
+        elif(d100 == 98): row = 25
+        elif(d100 == 99): row = 26
+        else: row = 27
+        
+        out += mtable3[row]
+    
+    elif(id == 4):
+        if(d100 < 21): row = 0
+        elif(d100 > 20 and d100 < 31): row = 1
+        elif(d100 > 30 and d100 < 41): row = 2
+        elif(d100 > 40 and d100 < 51): row = 3
+        elif(d100 > 50 and d100 < 58): row = 4
+        elif(d100 > 57 and d100 < 63): row = 5
+        elif(d100 > 62 and d100 < 68): row = 6
+        elif(d100 > 67 and d100 < 73): row = 7
+        elif(d100 > 72 and d100 < 78): row = 8
+        elif(d100 > 77 and d100 < 83): row = 9
+        elif(d100 > 82 and d100 < 88): row = 10
+        elif(d100 > 87 and d100 < 93): row = 11
+        elif(d100 > 92 and d100 < 96): row = 12
+        elif(d100 > 95 and d100 < 99): row = 13
+        elif(d100 == 99): row = 14
+        else: row = 15
+        
+        out += mtable4[row]
+        
+    elif(id == 5):
+        if(d100 < 31): row = 0
+        elif(d100 > 30 and d100 < 56): row = 1
+        elif(d100 > 55 and d100 < 71): row = 2
+        elif(d100 > 70 and d100 < 86): row = 3
+        elif(d100 > 85 and d100 < 94): row = 4
+        elif(d100 > 93 and d100 < 99): row = 5
+        else: row = 6
+        
+        out += mtable5[row]
+        
+    elif(id == 6):
+        if(d100 < 16): row = 0
+        elif(d100 > 15 and d100 < 19): row = 1
+        elif(d100 > 18 and d100 < 22): row = 2
+        elif(d100 > 21 and d100 < 24): row = 3
+        elif(d100 == 24 or d100 == 25): row = 4
+        elif(d100 == 26 or d100 == 27): row = 5
+        elif(d100 == 28 or d100 == 29): row = 6
+        elif(d100 == 30 or d100 == 31): row = 7
+        elif(d100 == 32 or d100 == 33): row = 8
+        elif(d100 == 34 or d100 == 35): row = 9
+        elif(d100 == 36 or d100 == 37): row = 10
+        elif(d100 == 38 or d100 == 39): row = 11
+        elif(d100 == 40 or d100 == 41): row = 12
+        elif(d100 == 42 or d100 == 43): row = 13
+        elif(d100 == 44 or d100 == 45): row = 14
+        elif(d100 == 46 or d100 == 47): row = 15
+        elif(d100 == 48 or d100 == 49): row = 16
+        elif(d100 == 50 or d100 == 51): row = 17
+        elif(d100 == 52 or d100 == 53): row = 18
+        elif(d100 == 54 or d100 == 55): row = 19
+        elif(d100 == 56 or d100 == 57): row = 20
+        elif(d100 == 58 or d100 == 59): row = 21
+        elif(d100 == 60 or d100 == 61): row = 22
+        elif(d100 == 62 or d100 == 63): row = 23
+        elif(d100 == 64 or d100 == 65): row = 24
+        elif(d100 > 65):
+            row = 25
+            for temp1 in range(66, 101):
+                if(temp1 != d100): row+=1
+                else: break
+        
+        out += mtable6[row]
+        
+    elif(id == 7):
+        if(d100 < 12): row = 0
+        elif(d100 > 11 and d100 < 15): row = 1
+        elif(d100 > 14):
+            row = 2
+            for temp2 in range(15, 101):
+                if(temp2 != d100): row+=1
+                else: break
+        
+        out += mtable7[row]
+        
+    elif(id == 8):
+        if(d100 < 11): row = 0
+        elif(d100 > 10 and d100 < 55):
+            row = 1
+            for temp3 in range(11, 54, 2):
+                if(temp3 != d100 and (temp3 + 1) != d100): row+=1
+                else: break
+        elif(d100 > 54):
+            row = 23
+            for temp4 in range(55, 101):
+                if(temp4 != d100): row+=1
+                else: break
+        print(d100)
+        out += mtable8[row]
     
     return out
