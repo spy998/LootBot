@@ -18,7 +18,6 @@ class threadHandler:
 
 if __name__ == "__main__":
     print("----------------------\n","LootBot","----------------------\n")
-    logging.basicConfig(level=logging.WARNING)
     print("checking config \n")#check for user settings if it exists confirm info else ask for it
     print("initializing \n")#set object variables here give fail message if there is an issue
     print("successfully started LootBot")
