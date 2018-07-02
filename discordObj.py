@@ -9,7 +9,16 @@ class discordDriver:
     def __init__(self):
         pass
 
-    def 
+    def readIN():
+        return "user input as string"
+
+class threadHandler:
+    #In the offchance that threads are used
+    pass
 
 if __name__ == "__main__":
-    pass
+    print("----------------------\n","LootBot","----------------------\n")
+    logging.basicConfig(level=logging.WARNING)
+    print("checking config \n")#check for user settings if it exists confirm info else ask for it
+    print("initializing \n")#set object variables here give fail message if there is an issue
+    print("successfully started LootBot")
