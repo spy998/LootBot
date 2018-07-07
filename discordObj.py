@@ -3,7 +3,7 @@ from discord.ext import commands
 
 
 botDescription = 'Lootbot is intended as a tool for dungeon masters to use in addition to using loot tables'
-lootbot = commands.Bot(command_prefix = '@lootbot', description = botDescription)
+lootbot = commands.Bot(command_prefix = '$$', description = botDescription)
   
 @lootbot.event
 async def on_ready():
